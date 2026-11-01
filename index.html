@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+    body{
+        margin-top: 5rem;
+        font-family: 'Bebas Neue';
+        background-color: #161616;
+        text-align: center;
+        padding-left: 2.5rem;
+    }
+
+    .title{
+        font-weight: 100;
+        font-size: 4rem;
+        color: rgb(204, 85, 85);
+    }
+
+    .title-description{
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        text-align: start;
+        font-size: 2.3rem;
+        text-decoration: underline;
+    }
+
+    .button-1{
+        border: none;
+        border-radius: 8px;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
+        align-self: flex-start;
+        display: flex;
+        background-color: rgb(204, 85, 85);
+        color: aliceblue;
+        text-transform: uppercase;
+        font-family: 'Almendra';
+        box-shadow: 0.5rem 0.5rem rgb(182, 76, 76);
+    }
+
+    .button-1:active{
+        transform: translate(0.5rem, 0.5rem);
+        box-shadow: none;
+    }
+
+    .button-1:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .buttons{
+        margin-top: 3rem;
+        display: flex;
+        color: aliceblue;
+        flex-direction: row;
+        justify-content: start;
+        gap: 4rem;
+        height: 10vh;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .button-description{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        line-height: 0.3rem;
+        color: antiquewhite;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .button-description-div{
+        padding: 2rem 1rem;
+        gap: 0.5rem;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        border: solid rgb(182, 76, 76)  2px;
+        box-shadow: 1rem 0.8rem 0 0 rgb(159, 68, 68);
+        font-family: 'Almendra';
+    }
+
+    .button-description-div:hover{
+        transform: translate(1rem, 0.8rem);
+        box-shadow: none;
+        border-color: #ff8d8d;
+    }
+
+</style>
+<body>
+    <h1 class="title">How far can I go without a plan?</h1>
+
+    <p class="title-description">Let's see what seems fun</p>
+    <div class="buttons">
+        <div class="button-container">
+            <button class="button-1">Button.</button>
+            
+        </div>
+        
+        <div class="button-description-div">
+            <p class="button-description">Buttons</p> <br>
+            <p class="button-description">Buttons can be fun. I mean, they're buttons. </p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
