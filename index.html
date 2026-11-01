@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
 </head>
 
 
@@ -81,7 +86,7 @@
         font-size: 1.5rem;
         margin: 0;
         padding: 0;
-        line-height: 0.3rem;
+        line-height: 1.4rem;
         color: antiquewhite;
         font-family: 'Courier New', Courier, monospace;
     }
@@ -103,6 +108,33 @@
         border-color: #ff8d8d;
     }
 
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .button-2{
+        border: solid 2px rgb(0, 255, 51);
+        background-color: transparent;
+        color: rgb(72, 190, 72);
+        font-size: 1.5rem;
+        padding: 0.8rem 1.2rem;
+        font-family: "Unica One";
+    }
+
+    .button-2:hover{
+        background-color: rgb(70, 183, 70);
+        transition: background-color ease 1s;
+        transition: color ease 0.8s;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .button-2:active{
+        transform: translate(-0.2rem, -0.2rem);
+    }
+
 </style>
 <body>
     <h1 class="title">How far can I go without a plan?</h1>
@@ -111,15 +143,27 @@
     <div class="buttons">
         <div class="button-container">
             <button class="button-1">Button.</button>
-            
+            <button onclick="playButtonSound()" class="button-2">BuTTon.</button>  
         </div>
         
         <div class="button-description-div">
-            <p class="button-description">Buttons</p> <br>
-            <p class="button-description">Buttons can be fun. I mean, they're buttons. </p>
+            <p class="button-description" style="margin-bottom: 1rem; font-size: 1.8rem; text-decoration: underline; font-weight: 550;">Buttons</p>
+            <p class="button-description">Buttons can be fun. I mean, they're buttons.</p> 
+            <p class="button-description">Audio when they're pressed is cool too.</p>
         </div>
 
+        
+
+
     </div>
+
+    <script>
+        function playButtonSound(){
+            const soundEffect = new Audio("./sound.mp3")
+            soundEffect.play()
+        }
+
+    </script>
 
     
 </body>
